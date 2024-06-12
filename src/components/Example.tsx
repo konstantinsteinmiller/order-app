@@ -20,10 +20,7 @@ export default function Example() {
         onClick={() => {
           setCount(3)
           staticVar = 3
-          // console.log('data: ', staticVar)
-          // @ts-ignore
           setPerson({ name: 'Bob' })
-          // @ts-ignore
           setFirstName('Konstantin')
         }}
       >
