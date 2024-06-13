@@ -38,6 +38,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'curly': 'error',
     'jest/no-disabled-tests': 'off',
+    'react/react-in-jsx-scope': 'off',
     // 'max-len': ['error', { code: 80 }],
   }
 }
