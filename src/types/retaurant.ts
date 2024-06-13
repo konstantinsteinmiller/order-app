@@ -1,5 +1,6 @@
 export interface RestaurantType {
   name: string,
+  image: string,
   opensAt: string,
   isAvailable: boolean,
   rating: number,
@@ -8,4 +9,5 @@ export interface RestaurantType {
   distance: number,
   deliveryPrice: number,
   minBasketTotal: number,
+  id: string,
 }

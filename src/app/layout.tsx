@@ -4,21 +4,15 @@ import "./globals.css";
 import Image from "next/image"
 import Link from "next/link"
 import {
-  ChevronLeft,
   Home,
-  LineChart,
-  Package,
   Package2,
   PanelLeft,
-  PlusCircle,
   Search,
   Settings,
   ShoppingCart,
-  Upload,
   Users2,
 } from "lucide-react"
 
-import { Badge } from "@/components/ui/badge"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -29,14 +23,6 @@ import {
 } from "@/components/ui/breadcrumb"
 import { Button } from "@/components/ui/button"
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -45,28 +31,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import { Textarea } from "@/components/ui/textarea"
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-} from "@/components/ui/toggle-group"
 import {
   Tooltip,
   TooltipContent,
@@ -129,8 +94,8 @@ export default function RootLayout({
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                      href="#"
-                      className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
+                    href="#"
+                    className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   >
                     <Settings className="h-5 w-5" />
                     <span className="sr-only">Settings</span>
@@ -198,16 +163,16 @@ export default function RootLayout({
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button
-                    variant="outline"
-                    size="icon"
-                    className="overflow-hidden rounded-full"
+                  variant="outline"
+                  size="icon"
+                  className="overflow-hidden rounded-full"
                 >
                   <Image
-                      src="/placeholder-user.jpg"
-                      width={36}
-                      height={36}
-                      alt="Avatar"
-                      className="overflow-hidden rounded-full"
+                    src="/placeholder-user.jpg"
+                    width={36}
+                    height={36}
+                    alt="Avatar"
+                    className="overflow-hidden rounded-full"
                   />
                 </Button>
               </DropdownMenuTrigger>

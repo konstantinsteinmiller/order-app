@@ -1,26 +1,13 @@
 import * as React from "react";
 
 import { RestaurantType } from "@/types/retaurant";
-import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Star, Bike, ShoppingBasket, Clock, MapPin } from "lucide-react";
 
 interface RestaurantProps {
@@ -35,15 +22,12 @@ export default function RestaurantCard ({ restaurant }:RestaurantProps) {
       </div>
       <img
         className="w-full h-32 object-cover"
-        src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        src={restaurant.image}
         alt="pizza"
       />
-      <CardContent className="flex justify-end p-2">
-        <div>
+      <CardContent className="flex p-2">
+        <div className="w-full">
           <CardTitle>{restaurant.name}</CardTitle>
-          {/* <CardDescription>
-            Deploy your new project in one-click.
-          </CardDescription> */}
 
           <div className="flex justify-between items-center">
             <div className="flex items-center">
@@ -51,11 +35,10 @@ export default function RestaurantCard ({ restaurant }:RestaurantProps) {
                 <Star /> {restaurant.rating}
               </span>
               <span className="ml-2 text-muted-foreground">
-                {" "}
                 {restaurant.cuisine.join(", ")}
               </span>
             </div>
-            <Button className="text-xs">Choose</Button>
+            <Button className="text-xs">Order</Button>
           </div>
 
           <div className="flex items-center">
