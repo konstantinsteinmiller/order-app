@@ -16,10 +16,12 @@ interface RestaurantProps {
 
 export default function RestaurantCard ({ restaurant }:RestaurantProps) {
   return (
-    <Card className="w-72 overflow-hidden text-xs">
-      <div className="bg-gray-600 text-white flex justify-center">
-        Opens at {restaurant.opensAt}
-      </div>
+    <Card className="overflow-hidden text-xs">
+      {restaurant.isAvailable ? (
+        <div className="bg-gray-600 text-white flex justify-center">
+          Opens at {restaurant.opensAt}
+        </div>
+      ) : ""}
       <img
         className="w-full h-32 object-cover"
         src={restaurant.image}

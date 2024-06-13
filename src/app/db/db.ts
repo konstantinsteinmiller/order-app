@@ -119,4 +119,17 @@ export const restaurantList: Array<RestaurantType> = [
     deliveryTime: [20, 40],
     id: '9',
   },
+  {
+    name: 'Marlon Orn',
+    distance: 6.8,
+    cuisine: ['italian pizza'],
+    image: 'https://loremflickr.com/640/480/food7',
+    isAvailable: false,
+    deliveryPrice: 5,
+    minBasketTotal: 5,
+    opensAt: '13:30',
+    rating: 5,
+    deliveryTime: [20, 40],
+    id: '9',
+  },
 ]
