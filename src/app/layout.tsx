@@ -167,12 +167,12 @@ export default function RootLayout({
                   size="icon"
                   className="overflow-hidden rounded-full"
                 >
-                  <Image
-                    src="/placeholder-user.jpg"
-                    width={36}
-                    height={36}
+                  <img
+                    src="https://media.istockphoto.com/id/1364105164/photo/hologram-human-head-deep-learning-and-artificial-intelligence-abstract-background.jpg?b=1&s=612x612&w=0&k=20&c=eue6RZBrtAzBjhp2FvMvuRUGGL9BsRJK4DyKJXbLwiM="
+                    width={40}
+                    height={40}
                     alt="Avatar"
-                    className="overflow-hidden rounded-full"
+                    className="overflow-hidden object-cover rounded-full h-[40px]"
                   />
                 </Button>
               </DropdownMenuTrigger>
